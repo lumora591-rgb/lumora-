@@ -39,31 +39,23 @@ header{
     filter: brightness(1.15) contrast(1.05);
 }
     .tagline{
-    font-size:34px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:64px;
+    font-weight:900;
+    text-transform:uppercase;
+    text-align:center;
+    color:#000 !important;
+
+    background:none !important;
+    -webkit-background-clip:initial;
+    -webkit-text-fill-color:#000;
+
     letter-spacing:2px;
-    }
-    text-shadow:
-        1px 1px 0 #666,
-        2px 2px 0 #555,
-        3px 3px 0 #444,
-        4px 4px 0 #333,
-        5px 5px 10px rgba(0,0,0,.6);
-    }
+    line-height:1.1;
+    margin:30px auto;
 
-    background:linear-gradient(to bottom,#555,#222,#000,#444);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    text-shadow:
-        2px 2px 0 #111,
-        4px 4px 8px rgba(0,0,0,.7);
+    text-shadow:none;
     }
-    text-shadow:
-        0 0 8px rgba(255,215,0,.8),
-        0 0 18px rgba(255,196,0,.6),
-        0 3px 6px rgba(0,0,0,.6);
-    }
-
 header h1{
 color:#FFD700;
 font-size:40px;
@@ -318,8 +310,9 @@ margin-top:50px;
 
 @media(max-width:768px){
     .tagline{
-    font-size:34px;
-    letter-spacing:2px;
+    font-size:42px;
+    line-height:1.2;
+    letter-spacing:1px;
 }
 header h1{
 font-size:32px;
