@@ -16,13 +16,14 @@ scroll-behavior:smooth;
 
 body{
 background:#111;
-color:white;
+color:#fff;
+line-height:1.6;
 }
 
 header{
 background:#c00000;
 text-align:center;
-padding:20px;
+padding:25px;
 }
 
 .logo{
@@ -32,19 +33,21 @@ margin-bottom:15px;
 
 header h1{
 color:#FFD700;
-font-size:38px;
+font-size:40px;
 }
 
 header p{
-margin-top:10px;
 color:#fff;
+margin-top:8px;
+font-size:18px;
 }
 
 nav{
-background:#990000;
+background:#8b0000;
 padding:15px;
 position:sticky;
 top:0;
+z-index:1000;
 }
 
 nav ul{
@@ -56,9 +59,10 @@ gap:20px;
 }
 
 nav a{
+color:#fff;
 text-decoration:none;
-color:white;
 font-weight:bold;
+transition:.3s;
 }
 
 nav a:hover{
@@ -67,7 +71,7 @@ color:#FFD700;
 
 .hero{
 text-align:center;
-padding:80px 20px;
+padding:90px 20px;
 background:linear-gradient(135deg,#ff4b2b,#ff9800);
 }
 
@@ -80,22 +84,23 @@ margin-bottom:15px;
 font-size:18px;
 max-width:700px;
 margin:auto;
-margin-bottom:25px;
+margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
-padding:15px 30px;
+padding:15px 35px;
 background:#25D366;
-color:white;
+color:#fff;
 text-decoration:none;
-border-radius:30px;
+border-radius:40px;
 font-weight:bold;
 transition:.3s;
 }
 
 .btn:hover{
 background:#1ebe5d;
+transform:scale(1.05);
 }
 
 section{
@@ -106,41 +111,44 @@ padding:60px 20px;
 
 section h2{
 text-align:center;
-margin-bottom:30px;
+margin-bottom:35px;
 color:#FFD700;
 font-size:34px;
 }
 
-.service-box{
-background:#222;
+#services{
+background:#1d1d1d;
+border-radius:18px;
 padding:40px;
-border-radius:20px;
+margin-top:40px;
 }
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,250px));
-justify-content:center;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
+justify-items:center;
 }
 
 .card{
-background:#333;
+background:#2a2a2a;
 padding:25px;
 border-radius:15px;
 text-align:center;
+width:100%;
+max-width:260px;
 transition:.3s;
-box-shadow:0 0 12px rgba(0,0,0,.4);
+box-shadow:0 0 10px rgba(0,0,0,.4);
 }
 
 .card:hover{
 transform:translateY(-8px);
-background:#444;
+background:#333;
 }
 
 .card h3{
 color:#FFD700;
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
 #portfolio{
@@ -151,8 +159,13 @@ gap:20px;
 
 .work{
 background:#222;
-border-radius:10px;
+border-radius:15px;
 overflow:hidden;
+transition:.3s;
+}
+
+.work:hover{
+transform:scale(1.03);
 }
 
 .work img{
@@ -165,117 +178,40 @@ padding:15px;
 text-align:center;
 color:#FFD700;
 }
+
+#about,
+#contact,
+#why{
+background:#1d1d1d;
+border-radius:18px;
+margin-top:40px;
+padding:40px;
+}
+
+footer{
+background:#000;
+color:#aaa;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:32px;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+}
 </style>
 
 </head>
-
 <body>
-
-<header>
-
-<img src="logo.png" class="logo" alt="Lumora Graphics Logo">
-
-<h1>LUMORA GRAPHICS</h1>
-
-<p>Designs That Shine</p>
-
-</header>
-
-<nav>
-
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-<section class="hero" id="home">
-
-<h2>Creative Graphic Design</h2>
-
-<p>
-Professional Graphic Designs for Businesses,
-Churches, Events and Personal Brands.
-</p>
-
-<a class="btn" href="https://wa.me/2349133529265">
-Chat on WhatsApp
-</a>
-
-</section>
-
-<section id="services">
-
-<div class="service-box">
-
-<h2>Our Services</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>Logo Design</h3>
-<p>Professional and modern brand identity.</p>
-</div>
-
-<div class="card">
-<h3>Church Flyers</h3>
-<p>Beautiful flyers for church programs.</p>
-</div>
-
-<div class="card">
-<h3>Birthday Flyers</h3>
-<p>Creative birthday celebration designs.</p>
-</div>
-
-<div class="card">
-<h3>Business Branding</h3>
-<p>Brand identity and promotional materials.</p>
-</div>
-
-<div class="card">
-<h3>Social Media Designs</h3>
-<p>Facebook, Instagram and WhatsApp graphics.</p>
-</div>
-
-<div class="card">
-<h3>Event Posters</h3>
-<p>Professional posters for every event.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Portfolio</h2>
-
-<div id="portfolio">
-
-<div class="work">
-<img src="portfolio1.jpg" alt="Design 1">
-<h3>Church Flyer</h3>
-</div>
-
-<div class="work">
-<img src="portfolio2.jpg" alt="Design 2">
-<h3>Logo Design</h3>
-</div>
-
-<div class="work">
-<img src="portfolio3.jpg" alt="Design 3">
-<h3>Business Flyer</h3>
-</div>
-
-</div>
-
-</section>
-
-</body>
-</html>
