@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lumora591-rgb.github.io/lumora-/sitemap.xml
