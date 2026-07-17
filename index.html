@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>LUMORA Graphics | Professional Graphic Designer in Nigeria</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="LUMORA Graphics offers professional logo design, flyer design, branding, church flyers, business branding and social media graphics.">
+<title>LUMORA Graphics | Professional Graphic Designer in Nigeria</title>
 
-<meta name="keywords" content="Graphic Designer, Logo Design, Flyer Design, Church Flyer, Business Branding, Nigeria, LUMORA Graphics">
+<meta name="description" content="Professional Logo Design, Flyer Design, Branding, Church Flyers, Social Media Designs and Business Branding by Lumora Graphics.">
 
-<meta name="author" content="LUMORA Graphics">
+<meta name="keywords" content="Graphic Designer, Logo Design, Flyer Design, Branding, Church Flyer, Nigeria, Lumora Graphics">
+
+<meta name="author" content="Lumora Graphics">
+
+<meta property="og:title" content="Lumora Graphics">
+
+<meta property="og:description" content="Professional Graphic Design for Businesses, Churches and Personal Brands.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://lumora591-rgb.github.io/lumora-/">
+
+<meta property="og:image" content="https://lumora591-rgb.github.io/lumora-/1000015639-removebg-preview%20(1).png">
+
+<meta name="theme-color" content="#d4af37">
 
 <link rel="icon" href="1000015639-removebg-preview (1).png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -20,389 +38,377 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
+font-family:'Poppins',sans-serif;
 background:#111;
 color:#fff;
-line-height:1.6;
+line-height:1.7;
+overflow-x:hidden;
 }
 
-header{
-    background:linear-gradient(
-        135deg,
-        #fff2a8 0%,
-        #f7d774 20%,
-        #d4af37 50%,
-        #b8860b 80%,
-        #f7d774 100%
-    );
-    text-align:center;
-    padding:30px 20px;
-    box-shadow:0 6px 20px rgba(0,0,0,.35);
-}
+/* Loader */
 
-.logo{
-    width:180px;
-    filter: brightness(1.15) contrast(1.05);
-}
-    .tagline{
-    font-family: "Cinzel", serif;
-    font-size: 52px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #000;
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    line-height: 1.2;
-}
-header h1{
-color:#FFD700;
-font-size:40px;
-}
-
-header p{
-margin-top:15px;
-font-size:22px;
-font-weight:bold;
-font-style:italic;
-font-family:Georgia, serif;
-color:#FFD700;
-letter-spacing:2px;
-text-shadow:
-0 0 5px #FFD700,
-0 0 10px rgba(255,215,0,.6);
-}
-
-nav{
-    background:#111;
-    padding:15px 10px;
-    border-top:2px solid #d4af37;
-    border-bottom:2px solid #d4af37;
-    box-shadow:0 0 20px rgba(212,175,55,.3);
-}
-
-nav ul{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:15px;
-    list-style:none;
-    flex-wrap:nowrap;   /* Keep everything on one line */
-    overflow-x:auto;    /* Allow scrolling only if screen is too small */
-    padding:0;
-    margin:0;
-}
-
-nav ul li{
-    flex:none;
-}
-
-nav ul li a{
-    display:block;
-    padding:12px 22px;
-    background:linear-gradient(145deg,#2b2b2b,#1a1a1a);
-    color:#fff;
-    text-decoration:none;
-    border:1px solid #d4af37;
-    border-radius:12px;
-    font-weight:bold;
-    transition:.3s;
-    box-shadow:
-        0 0 10px rgba(212,175,55,.3),
-        inset 0 1px 2px rgba(255,255,255,.1);
-}
-
-nav ul li a:hover{
-    background:#d4af37;
-    color:#111;
-    transform:translateY(-3px);
-    box-shadow:0 0 18px #d4af37;
-}
-
-nav ul{
-display:flex;
-justify-content:center;
-list-style:none;
-flex-wrap:wrap;
-gap:20px;
-}
-
-nav a{
-display:inline-block;
-padding:10px 18px;
-background:#2b2b2b;
-border:1px solid #FFD700;
-border-radius:10px;
-text-decoration:none;
-color:white;
-font-weight:bold;
-transition:0.3s;
-box-shadow:0 0 8px rgba(255,215,0,.2);
-}
-
-nav a:hover{
-background:#FFD700;
-color:#111;
-transform:translateY(-3px);
-box-shadow:0 0 15px rgba(255,215,0,.6);
-}
-
-nav a:hover{
-color:#FFD700;
-}
-
-.hero{
-text-align:center;
-padding:80px 20px;
-background:#1b1b1b;
-border:2px solid rgba(255,215,0,0.25);
-border-radius:25px;
-margin:30px auto;
-width:95%;
-max-width:1200px;
-box-shadow:
-0 0 25px rgba(0,0,0,.6),
-0 0 15px rgba(255,215,0,.15);
-position:relative;
-overflow:hidden;
-}
-  .hero::before{
-content:"";
-position:absolute;
+#loader{
+position:fixed;
 top:0;
 left:0;
 width:100%;
 height:100%;
-border:1px solid rgba(255,215,0,.2);
+background:#d4af37;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:.5s;
+}
+
+#loader img{
+width:130px;
+animation:pulse 1.4s infinite;
+}
+
+@keyframes pulse{
+
+0%{transform:scale(1);}
+
+50%{transform:scale(1.08);}
+
+100%{transform:scale(1);}
+
+}
+
+/* Header */
+
+header{
+
+background:linear-gradient(135deg,#fff2a8,#f7d774,#d4af37,#b8860b);
+
+padding:35px 20px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+width:190px;
+
+filter:brightness(1.1);
+
+}
+
+.tagline{
+
+font-family:'Cinzel',serif;
+
+font-size:55px;
+
+font-weight:900;
+
+text-transform:uppercase;
+
+color:#000;
+
+margin-top:25px;
+
+letter-spacing:2px;
+
+line-height:1.2;
+
+}
+
+/* Navigation */
+
+nav{
+
+background:#111;
+
+padding:18px;
+
+border-top:2px solid #d4af37;
+
+border-bottom:2px solid #d4af37;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+nav ul{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+list-style:none;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+display:block;
+
+padding:12px 24px;
+
+text-decoration:none;
+
+color:white;
+
+background:#222;
+
+border:1px solid #d4af37;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+nav a:hover{
+
+background:#d4af37;
+
+color:#111;
+
+transform:translateY(-3px);
+
+box-shadow:0 0 18px rgba(212,175,55,.5);
+
+}
+
+.hero{
+
+width:95%;
+
+max-width:1200px;
+
+margin:40px auto;
+
+background:#1b1b1b;
+
+padding:80px 30px;
+
+text-align:center;
+
 border-radius:25px;
-pointer-events:none;
-  }
+
+border:2px solid rgba(212,175,55,.2);
+
+box-shadow:0 0 25px rgba(0,0,0,.45);
+
+}
 
 .hero h2{
-font-size:46px;
-margin-bottom:18px;
+
+font-size:48px;
+
 color:#FFD700;
-text-shadow:0 0 12px rgba(255,215,0,.4);
+
+margin-bottom:20px;
+
 }
 
 .hero p{
-font-size:20px;
-color:#ddd;
-max-width:750px;
+
+max-width:800px;
+
 margin:auto;
-margin-bottom:30px;
-line-height:1.8;
+
+font-size:20px;
+
+color:#ddd;
+
+margin-bottom:35px;
+
 }
 
 .btn{
+
 display:inline-block;
+
 padding:15px 35px;
-background:#25D366;
-color:#fff;
+
+background:#d4af37;
+
+color:#111;
+
 text-decoration:none;
-border-radius:40px;
-font-weight:bold;
-transition:.3s;
+
+font-weight:700;
+
+border-radius:50px;
+
+transition:.35s;
+
 }
 
 .btn:hover{
-background:#1ebe5d;
-transform:scale(1.05);
+
+transform:translateY(-4px);
+
+box-shadow:0 0 20px rgba(212,175,55,.5);
+
 }
 
 section{
-width:100%;
-max-width:100%;
-padding:60px 15px;
-margin:0;
+
+padding:70px 20px;
+
 }
-  
-section h2{
+
+h2{
+
 text-align:center;
-margin-bottom:35px;
+
 color:#FFD700;
-font-size:34px;
-}
 
-#services{
-width:100%;
-background:#1d1d1d;
-padding:40px 15px;
-border-radius:0;
-margin:0;
-}
+margin-bottom:40px;
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-justify-items:center;
-}
+font-size:36px;
 
-.card{
-background:#2a2a2a;
-padding:25px;
-border-radius:15px;
-text-align:center;
-width:100%;
-max-width:500px;
-transition:.3s;
-box-shadow:0 0 10px rgba(0,0,0,.4);
-}
-
-.card:hover{
-transform:translateY(-8px);
-background:#333;
-}
-
-.card h3{
-color:#FFD700;
-margin-bottom:12px;
-}
-
-#portfolio{
-display:grid;
-grid-template-columns:1fr;
-gap:20px;
-width:100%;
-}
-
-.work{
-background:#222;
-border-radius:15px;
-overflow:hidden;
-transition:.3s;
-}
-
-.work:hover{
-transform:scale(1.03);
-}
-
-.work img{
-width:100%;
-display:block;
-}
-
-.work h3{
-padding:15px;
-text-align:center;
-color:#FFD700;
-}
-
-#about,
-#contact,
-#why{
-width:100%;
-background:#1d1d1d;
-border-radius:18px;
-margin-top:40px;
-padding:40px;
-}
-
-footer{
-background:#000;
-color:#aaa;
-text-align:center;
-padding:20px;
-margin-top:50px;
 }
 
 @media(max-width:768px){
-    .tagline{
-    font-size:42px;
-    line-height:1.2;
-    letter-spacing:1px;
-}
-header h1{
-font-size:32px;
+
+.tagline{
+
+font-size:38px;
+
 }
 
 .hero h2{
-font-size:30px;
+
+font-size:34px;
+
 }
 
 .hero p{
-font-size:16px;
+
+font-size:17px;
+
+}
+
+nav ul{
+
+gap:10px;
+
+}
+
+nav a{
+
+padding:10px 16px;
+
+font-size:14px;
+
 }
 
 }
-    /* Loading Screen */
-#loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #d4af37;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+    .floating-whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:60px;
+height:60px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,.3);
+transition:.3s;
+z-index:999;
 }
 
-#loader img {
-    width: 120px;
-    animation: pulse 1.5s infinite;
-}
+.floating-whatsapp:hover{
+transform:scale(1.1);
+    }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 </style>
 
 </head>
-
 <body>
 
+<!-- Loading Screen -->
 <div id="loader">
     <img src="1000015639-removebg-preview (1).png" alt="Lumora Logo">
 </div>
 
+<!-- Header -->
 <header>
-    <img src="1000015639-removebg-preview (1).png" class="logo" alt="Lumora Logo">
-    <h2 class="tagline">BRING YOUR VISION TO LIFE</h2>
+
+    <img src="1000015639-removebg-preview (1).png"
+         class="logo"
+         alt="Lumora Graphics Logo">
+
+    <h1 class="tagline">
+        BRING YOUR VISION TO LIFE
+    </h1>
+
 </header>
+
+<!-- Navigation -->
 
 <nav>
 
 <ul>
+
 <li><a href="#home">Home</a></li>
+
 <li><a href="#services">Services</a></li>
+
 <li><a href="https://www.behance.net/lumora001" target="_blank">Portfolio</a></li>
+
 <li><a href="#about">About</a></li>
+
 <li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </nav>
+
+<!-- Hero -->
 
 <section class="hero" id="home">
 
 <h2>Creative Graphic Design</h2>
 
 <p>
-Professional Graphic Designs for Businesses,
-Churches, Events and Personal Brands.
+
+Professional Graphic Design for businesses,
+
+churches, events and personal brands.
+
+We create premium visuals that make your
+
+brand stand out and leave a lasting impression.
+
 </p>
 
-<a href="https://wa.me/2349133529265?text=Hello%20Lumora%20Graphics!%20I%20would%20like%20to%20get%20started%20with%20a%20design." class="btn">
-    GET STARTED
+<a href="https://wa.me/2349133529265?text=Hello%20Lumora%20Graphics!%20I%20would%20like%20to%20get%20started%20with%20a%20design."
+class="btn">
+
+GET STARTED
+
 </a>
 
 </section>
-
 <section id="services">
 
 <h2>Our Services</h2>
@@ -411,75 +417,140 @@ Churches, Events and Personal Brands.
 
 <div class="card">
 <h3>Logo Design</h3>
-<p>Professional and modern brand identity.</p>
+<p>Professional, modern and memorable logos that build a strong brand identity.</p>
 </div>
 
 <div class="card">
-<h3>Church Flyers</h3>
-<p>Beautiful flyers for church programs.</p>
+<h3>Church Flyer Design</h3>
+<p>Creative and inspiring flyer designs for church programs and events.</p>
 </div>
 
 <div class="card">
-<h3>Birthday Flyers</h3>
-<p>Creative birthday celebration designs.</p>
+<h3>Birthday Flyer Design</h3>
+<p>Eye-catching birthday flyers that make every celebration stand out.</p>
 </div>
 
 <div class="card">
 <h3>Business Branding</h3>
-<p>Brand identity and promotional materials.</p>
+<p>Complete branding solutions including business cards, banners and promotional materials.</p>
 </div>
 
 <div class="card">
 <h3>Social Media Designs</h3>
-<p>Facebook
+<p>Professional Facebook, Instagram and WhatsApp promotional graphics.</p>
+</div>
+
+<div class="card">
+<h3>Custom Designs</h3>
+<p>Need something unique? We create custom designs tailored to your ideas.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2>Portfolio</h2>
+
+<div class="card">
+
+<h3>See My Latest Designs</h3>
+
+<p>
+Explore my creative projects and discover how I bring ideas to life through professional graphic design.
+</p>
+
+<br>
+
+<a href="https://www.behance.net/lumora001"
+target="_blank"
+class="btn">
+
+VIEW PORTFOLIO
+
+</a>
+
+</div>
+
+</section>
+
 <section id="about">
 
-<h2>About Lumora</h2>
+<h2>About Lumora Graphics</h2>
 
-<p style="text-align:center;max-width:800px;margin:auto;font-size:18px;line-height:1.8;">
-Welcome to lumora Graphics,
-At Lumora Graphics, we turn ideas into stunning visuals that inspire and leave a lasting impression. From logos and branding to social media designs and print materials, we create creative, high-quality designs that help businesses and individuals stand out. Your vision, brought to life with creativity and precision.
+<p style="text-align:center;max-width:850px;margin:auto;font-size:18px;line-height:1.9;">
+
+At <strong>Lumora Graphics</strong>, we transform ideas into stunning visuals that inspire, communicate and leave a lasting impression. Whether it's branding, flyers, social media graphics or promotional materials, our mission is to help businesses, churches and individuals stand out with creative, high-quality designs.
+
 </p>
 
 </section>
 
 <section id="why">
 
-<h2>Why Choose Lumora?</h2>
+<h2>Why Choose Lumora Graphics?</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>Creative Designs</h3>
-<p>Unique and eye-catching designs tailored to your brand.</p>
+<h3>Creative Excellence</h3>
+<p>Every design is original, attractive and tailored to your brand.</p>
 </div>
 
 <div class="card">
 <h3>Fast Delivery</h3>
-<p>Quick turnaround without compromising quality.</p>
+<p>Quick turnaround while maintaining premium quality.</p>
 </div>
 
 <div class="card">
 <h3>Affordable Pricing</h3>
-<p>Professional services at budget-friendly prices.</p>
+<p>Professional designs at prices that offer great value.</p>
 </div>
 
 <div class="card">
 <h3>Customer Satisfaction</h3>
-<p>Your satisfaction is our priority on every project.</p>
+<p>Your satisfaction is our highest priority on every project.</p>
 </div>
 
 </div>
 
 </section>
 
+<section id="testimonials">
+
+<h2>Why Clients Love Lumora</h2>
+
+<div class="card">
+
+<p style="font-style:italic;">
+
+"Professional, creative and easy to work with. The final design exceeded my expectations."
+
+</p>
+
+<br>
+
+<strong>★★★★★</strong>
+
+</div>
+
+</section>
+    
 <section id="contact">
 
-<h2>Contact Us</h2>
+<h2>Get In Touch</h2>
 
 <p style="text-align:center;font-size:18px;">
-📱 WhatsApp:
-<a href="https://wa.me/2349133529265" style="color:#25D366;text-decoration:none;">
+Ready to bring your vision to life? Let's create something amazing together.
+</p>
+
+<br>
+
+<p style="text-align:center;font-size:18px;">
+📱 <strong>WhatsApp</strong><br>
+<a href="https://wa.me/2349133529265?text=Hello%20Lumora%20Graphics!%20I%20would%20like%20to%20get%20started%20with%20a%20design."
+style="color:#FFD700;text-decoration:none;font-weight:bold;">
 +234 913 352 9265
 </a>
 </p>
@@ -487,27 +558,60 @@ At Lumora Graphics, we turn ideas into stunning visuals that inspire and leave a
 <br>
 
 <p style="text-align:center;font-size:18px;">
-📧 Email:
-<a href="mailto:lumora591@gmail.com" style="color:#FFD700;text-decoration:none;">
+📧 <strong>Email</strong><br>
+<a href="mailto:lumora591@gmail.com"
+style="color:#FFD700;text-decoration:none;font-weight:bold;">
 lumora591@gmail.com
 </a>
+</p>
+
+<br>
+
+<p style="text-align:center;font-size:18px;">
+🎨 <strong>Portfolio</strong><br>
+<a href="https://www.behance.net/lumora001"
+target="_blank"
+style="color:#FFD700;text-decoration:none;font-weight:bold;">
+View My Behance Portfolio
+</a>
+</p>
 
 </section>
 
 <footer>
 
-<p>&copy; 2025 Lumora Graphics. All Rights Reserved.</p>
+<h3 style="color:#FFD700;">LUMORA GRAPHICS</h3>
 
 <p style="margin-top:10px;">
-Designs That Shine ✨
+Bringing Your Vision to Life Through Creative Design.
+</p>
+
+<p style="margin-top:15px;">
+© 2025 Lumora Graphics. All Rights Reserved.
 </p>
 
 </footer>
     
-    <script>
+    <a href="https://wa.me/2349133529265?text=Hello%20Lumora%20Graphics!%20I%20would%20like%20to%20get%20started%20with%20a%20design."
+class="floating-whatsapp"
+target="_blank">
+
+💬
+
+    </a>
+<script>
 window.addEventListener("load", function () {
-    setTimeout(function () {
-        document.getElementById("loader").style.display = "none";
-    }, 1500);
+    const loader = document.getElementById("loader");
+    if (loader) {
+        setTimeout(function () {
+            loader.style.opacity = "0";
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 500);
+        }, 1200);
+    }
 });
 </script>
+
+</body>
+</html>
